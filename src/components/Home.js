@@ -103,7 +103,7 @@ class Hompage extends React.Component {
                     <Col lg={5}>
                       <Link to='/vte'>
                         <Container>
-                          <Image roundedCircle src="/images/vtm/banner_vtm.jpg" width="250" height="140" />
+                          <Image roundedCircle src="/images/vtm/vtm_enter.PNG" width="250" height="140" />
                           <h2>VTM</h2>
                           <p>วีที แมชชีนเนอรี่ เป็นตัวแทนจำหน่ายเครื่องเพรสที่ราคา สมเหตุสมผลและมีคุณภาพตามมาตรฐานสากล</p>
                         </Container>
