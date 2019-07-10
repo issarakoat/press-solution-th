@@ -64,6 +64,7 @@ class MyVerticallyCenteredModal extends React.Component {
             <Col md={6} lg={3}>
                 <div style={{padding:'0.1rem'}}>
                 <Image
+                    style={{alignItems:'center'}}
                     fluid
                     src={this.props.machine_img}
                     onClick={() => this.setState({ modalShow: true })}

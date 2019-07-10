@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container,Carousel,Image,Row,Col, Nav} from 'react-bootstrap'
+import {Container,Carousel,Image,Row,Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import '../styles/landing.css'
 
@@ -31,43 +31,43 @@ class Hompage extends React.Component {
             >
             <Carousel.Item>
               <div className='img-bg-color'>
-                <Nav.Link href='http://www.xuduan.com.cn/Products/straight/index.html' target="_blank" rel="noopener noreferrer">
+                  <Link to='/vtm'>
                     <Image
                     src="/images/xuduan_pics/JE25_wt.png"
                     fluid                  
                     />
-                  </Nav.Link>
+                  </Link>
               </div>              
             </Carousel.Item>
             <Carousel.Item>
               <div className='img-bg-color'>
-                <Nav.Link href='http://www.xuduan.com.cn/Products/side/index.html' target="_blank" rel="noopener noreferrer">
+              <Link to='/vtm'>
                     <Image
                     src="/images/xuduan_pics/YX41-1000_wt.png"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                   </div>
             </Carousel.Item>
             <Carousel.Item>
               
             <div className='img-bg-color'>
-                <Nav.Link href='http://www.xuduan.com.cn/Products/Servo%20Presses/index.html' target="_blank" rel="noopener noreferrer">
+            <Link to='/vtm'>
                     <Image
                     src="/images/xuduan_pics/Servo_press_wt.PNG"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                     </div>
             </Carousel.Item>
             <Carousel.Item>
             <div className='img-bg-color'>
-                <Nav.Link href='http://www.xuduan.com.cn/Products/Precision%20%20High%20Speed%20Presses/index.html' target="_blank" rel="noopener noreferrer">
+            <Link to='/vtm'>
                     <Image
                     src="/images/xuduan_pics/JF75G-200c.PNG"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                     </div>
                     <Carousel.Caption>
                     </Carousel.Caption>
@@ -75,62 +75,62 @@ class Hompage extends React.Component {
             </Carousel.Item>
             <Carousel.Item>
               <div className='img-bg-color'>
-                  <Nav.Link href='http://www.xuduan.com.cn/Products/C-Type%20Presses/index.html' target="_blank" rel="noopener noreferrer">
+                  <Link to='/vtm'>
                     <Image
                     src="/images/xuduan_pics/JF36.PNG"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                     </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className='img-bg-color'>
-                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+              <Link to='/vte'>
                     <Image
                     src="/images/vte/five_more/install.PNG"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                     </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className='img-bg-color'>
-                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                  <Link to='/vte'>
                     <Image
                     src="/images/vte/five_more/install1.PNG"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                     </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className='img-bg-color'>
-                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                  <Link to='/vte'>
                     <Image
                     src="/images/vte/five_more/repair.PNG"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                     </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className='img-bg-color'>
-                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                  <Link to='/vte'>
                     <Image
                     src="/images/vte/five_more/repair1.PNG"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                     </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className='img-bg-color'>
-                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                  <Link to='/vte'>
                     <Image
                     src="/images/vte/five_more/maintain.PNG"
                     fluid                    
                     />
-                  </Nav.Link>
+                  </Link>
                     </div>
             </Carousel.Item>
          </Carousel>
@@ -151,7 +151,7 @@ class Hompage extends React.Component {
                    
                     <Col lg={2}></Col>
                     <Col lg={5}>
-                      <Link to='/vte'>
+                      <Link to='/vtm'>
                         <Container>
                           <Image roundedCircle src="/images/vtm/vtm_enter.PNG" width="250" height="140" />
                           <h2>VTM</h2>
