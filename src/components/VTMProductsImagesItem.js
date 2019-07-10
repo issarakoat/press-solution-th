@@ -10,7 +10,6 @@ class MyVerticallyCenteredModal extends React.Component {
     }
     
     render() {
-     const d_list = this.props.list.map(item=>(<li>{item}</li>))
       return (
         <Modal
           {...this.props}
@@ -32,16 +31,17 @@ class MyVerticallyCenteredModal extends React.Component {
                         />
                 </Col>
                 <Col lg={8}>
-                    <ul>
-                        {d_list}
-                    </ul>
+                    <Image 
+                        fluid
+                        src={this.props.desc_img}
+                        />
                 </Col>
                 
             </Row>
            
             <Image 
                 fluid
-                src={this.props.desc_img}/>
+                src={this.props.spec_img}/>
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.props.onHide}>Close</Button>
@@ -51,7 +51,7 @@ class MyVerticallyCenteredModal extends React.Component {
     }
   }
   
-  class VTMProductItem extends React.Component {
+  class VTMProductsImagesItem extends React.Component {
     constructor(props) {
       super(props);
   
@@ -61,7 +61,7 @@ class MyVerticallyCenteredModal extends React.Component {
       let modalClose = () => this.setState({ modalShow: false });
       return (
      
-            <Col sm={4}>
+            <Col md={6} lg={3}>
                 <div style={{padding:'0.1rem'}}>
                 <Image
                     fluid
@@ -74,10 +74,9 @@ class MyVerticallyCenteredModal extends React.Component {
                 onHide={modalClose}
                 id={this.props.id}
                 name={this.props.name}
-                desc={this.props.desc}
-                list={this.props.list}
                 machine_img={this.props.machine_img}
                 desc_img={this.props.desc_img}
+                spec_img={this.props.spec_img}
             />
           </Col>
       
@@ -85,4 +84,4 @@ class MyVerticallyCenteredModal extends React.Component {
     }
   }
   
- export default VTMProductItem;
+ export default VTMProductsImagesItem;

@@ -83,7 +83,57 @@ class Hompage extends React.Component {
                   </Nav.Link>
                     </div>
             </Carousel.Item>
-            </Carousel>
+            <Carousel.Item>
+              <div className='img-bg-color'>
+                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                    <Image
+                    src="/images/vte/five_more/install.PNG"
+                    fluid                    
+                    />
+                  </Nav.Link>
+                    </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className='img-bg-color'>
+                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                    <Image
+                    src="/images/vte/five_more/install1.PNG"
+                    fluid                    
+                    />
+                  </Nav.Link>
+                    </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className='img-bg-color'>
+                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                    <Image
+                    src="/images/vte/five_more/repair.PNG"
+                    fluid                    
+                    />
+                  </Nav.Link>
+                    </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className='img-bg-color'>
+                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                    <Image
+                    src="/images/vte/five_more/repair1.PNG"
+                    fluid                    
+                    />
+                  </Nav.Link>
+                    </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className='img-bg-color'>
+                  <Nav.Link href='' target="_blank" rel="noopener noreferrer">
+                    <Image
+                    src="/images/vte/five_more/maintain.PNG"
+                    fluid                    
+                    />
+                  </Nav.Link>
+                    </div>
+            </Carousel.Item>
+         </Carousel>
 
             <div className='marketing'>
               <div className='container_'>

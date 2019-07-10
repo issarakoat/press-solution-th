@@ -1,28 +1,28 @@
 import React from 'react';
 import {Row} from 'react-bootstrap'
 // import VTMProductsItem from '../components/VTMProductItem'
-import VTMProductsImageItem from '../components/VTMProductsImagesItem'
 // import MyVerticallyCenteredModal from '../components/MyVerticallyCenteredModal'
-import ProductsData from '../data/VTM_products_allData'
+import Products_data from '../data/VTM_CseriesData'
+import VTMProductsImagesItem from '../components/VTMProductsImagesItem'
 
- function VTM_products(){
-     const AllProDucts = ProductsData.map(item=>
-         <VTMProductsImageItem 
+ function VTM_products_new(){
+     const AllProducts = Products_data.map(item=>
+         <VTMProductsImagesItem 
          id={item.id} 
          name={item.name} 
-         desc_img={item.desc_img} 
          machine_img={item.machine_img} 
+         desc_img={item.desc_img}
          spec_img={item.spec_img}
          />
      )
      return (
          <div>
              <Row>
-                {AllProDucts}
+                {AllProducts}
             </Row>
          </div>
      )
  }
   
- export default VTM_products;
+ export default VTM_products_new;
 //   render(<VTM_products />);

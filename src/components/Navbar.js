@@ -17,8 +17,8 @@ function NavBar(){
                     <Link to='/contact'><Nav.Link href="/contact">ติดต่อเรา</Nav.Link></Link>
             </Nav>
             </Navbar.Collapse>
-            <a style={{paddingLeft:'0.8rem'}}href='https://awesome-villani-6bed18.netlify.com/'  rel="noopener noreferrer">TH</a>
-            <a style={{paddingLeft:'0.8rem'}}href='https://awesome-villani-6bed18.netlify.com/'  rel="noopener noreferrer">EN</a>
+            {/* <a style={{paddingLeft:'0.8rem'}}href='https://awesome-villani-6bed18.netlify.com/'  rel="noopener noreferrer">TH</a>
+            <a style={{paddingLeft:'0.8rem'}}href='https://awesome-villani-6bed18.netlify.com/'  rel="noopener noreferrer">EN</a> */}
             </Navbar>
         </div>
     )
