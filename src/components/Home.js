@@ -142,7 +142,7 @@ class Hompage extends React.Component {
                     <Col lg={5}>
                       <Link to='/vte'>
                       <Container>
-                          <Image roundedCircle src="/images/vte/banner_vte.jpg" width="250" height="140" />
+                          <Image roundedCircle src="/images/vte/vte_enter.PNG" fluid />
                           <h2>VTE</h2>
                           <p>ประกอบกิจการ ซ่อม ติดตั้ง ขนย้าย และงานบำรุงรักษาเชิงป้องกันของเครื่องเพรส(เครื่องปั๊มโลหะ)</p>
                         </Container>
@@ -153,7 +153,7 @@ class Hompage extends React.Component {
                     <Col lg={5}>
                       <Link to='/vtm'>
                         <Container>
-                          <Image roundedCircle src="/images/vtm/vtm_enter.PNG" width="250" height="140" />
+                          <Image roundedCircle src="/images/vtm/vtm_enter.PNG" fluid />
                           <h2>VTM</h2>
                           <p>วีที แมชชีนเนอรี่ เป็นตัวแทนจำหน่ายเครื่องเพรสที่ราคา สมเหตุสมผลและมีคุณภาพตามมาตรฐานสากล</p>
                         </Container>

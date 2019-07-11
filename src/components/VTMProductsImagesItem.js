@@ -61,7 +61,7 @@ class MyVerticallyCenteredModal extends React.Component {
       let modalClose = () => this.setState({ modalShow: false });
       return (
      
-            <Col md={6} lg={3}>
+            <Col md={6} lg={3} sm={6} xs={6}>
                 <div style={{padding:'0.1rem'}}>
                 <Image
                     style={{alignItems:'center'}}

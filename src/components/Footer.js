@@ -24,7 +24,6 @@ function Footer(){
               <Image 
                className='color'
                 fluid
-                width='500'
                 src='/images/vtm/logo_vtm.png'
               />
             </Link>
