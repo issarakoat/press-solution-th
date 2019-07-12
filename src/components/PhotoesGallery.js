@@ -5,7 +5,7 @@ function PhotoesGallery(props){
     return (
         <div className='item'>   
       
-            <Col sm={4} >
+            <Col  >
                 <Container>
                 <Image 
                 //  fluid
