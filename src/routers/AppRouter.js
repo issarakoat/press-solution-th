@@ -10,7 +10,7 @@ import Contact from '../components/Contact'
 
 
 const AppRouter = ()=>(
-    <BrowserRouter >
+    <BrowserRouter>
     <div>
         <NavBar />
         <Switch>
