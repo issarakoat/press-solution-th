@@ -2,6 +2,7 @@ import React from 'react';
 import {Container,Carousel,Image,Row,Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import '../styles/landing.css'
+import Translate from 'react-translate-component'
 
 class Hompage extends React.Component {
     constructor(props, context) {
@@ -144,7 +145,7 @@ class Hompage extends React.Component {
                       <Container>
                           <Image roundedCircle src="/images/vte/vte_enter.PNG" fluid />
                           <h2>VTE</h2>
-                          <p>ประกอบกิจการ ซ่อม ติดตั้ง ขนย้าย และงานบำรุงรักษาเชิงป้องกันของเครื่องเพรส(เครื่องปั๊มโลหะ)</p>
+                          <p><Translate content='home.vte'/></p>
                         </Container>
                       </Link>
                     </Col>
@@ -155,7 +156,7 @@ class Hompage extends React.Component {
                         <Container>
                           <Image roundedCircle src="/images/vtm/vtm_enter.PNG" fluid />
                           <h2>VTM</h2>
-                          <p>วีที แมชชีนเนอรี่ เป็นตัวแทนจำหน่ายเครื่องเพรสที่ราคา สมเหตุสมผลและมีคุณภาพตามมาตรฐานสากล</p>
+                          <p><Translate content='home.vtm'/></p>
                         </Container>
                         </Link>
                     </Col>

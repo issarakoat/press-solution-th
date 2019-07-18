@@ -2,9 +2,27 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import {Navbar,Nav} from 'react-bootstrap'
 import '../styles/footer.css'
-function NavBar(){
-    return(
-        <div>
+import Couterpart from 'counterpart'
+import Translate from 'react-translate-component'
+import En from './lang/en'
+import Th from './lang/th'
+Couterpart.registerTranslations('en',En)
+Couterpart.registerTranslations('th',Th)
+Couterpart.setLocale('th') //default
+
+
+class NavBar extends React.Component {
+    state = {
+        lang: 'th'
+      }
+    onLangChange= (e)=>{
+        this.setState({lang: e.target.value})
+        Couterpart.setLocale(e.target.value)
+        console.log("changing")
+      }
+    render() {
+        return (
+            <div>
             <Navbar 
             bg="dark"
             variant="dark"
@@ -14,13 +32,17 @@ function NavBar(){
             <Nav className="mr-auto">
                     <Link to='/vte'><Nav.Link href="/vte">VTE</Nav.Link></Link>
                     <Link to='/vtm'><Nav.Link href="/vtm">VTM</Nav.Link></Link>
-                    <Link to='/contact'><Nav.Link href="/contact">ติดต่อเรา</Nav.Link></Link>
+                    <Link to='/contact'><Nav.Link href="/contact"><Translate content='contact'/></Nav.Link></Link>
             </Nav>
             </Navbar.Collapse>
-            {/* <a style={{paddingLeft:'0.8rem'}}href='https://awesome-villani-6bed18.netlify.com/'  rel="noopener noreferrer">TH</a>
-            <a style={{paddingLeft:'0.8rem'}}href='https://awesome-villani-6bed18.netlify.com/'  rel="noopener noreferrer">EN</a> */}
+            <select value={this.state.lang} onChange={this.onLangChange}>
+                <option value='en'>EN</option>
+                <option value='th'>TH</option>
+            </select>
             </Navbar>
         </div>
-    )
+        );
+    }
 }
+
 export default NavBar;

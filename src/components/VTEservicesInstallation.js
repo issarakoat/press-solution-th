@@ -5,6 +5,8 @@ import Installation_HF_at_SAM_Data from '../data/Installation_HF_at_SAM_Data'
 import FagorSLAB_Data from '../data/Fagor_SLAB_Data'
 import VersionData from '../data/VersionData'
 import Hydraulic from '../data/HydraulicLCM_2500Data'
+import Translate from 'react-translate-component'
+
 function VTEservicesInstallation(){
     const Installation_HF_at_SAM = Installation_HF_at_SAM_Data.map(item=>
         <PhotoesGallery id={item.id} img={item.img}/>)
@@ -21,7 +23,7 @@ function VTEservicesInstallation(){
                 <Card>
                     <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    การติดตั้ง H&F ที่ SAM
+                        <Translate content='vte.install1' />
                     </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
@@ -32,7 +34,7 @@ function VTEservicesInstallation(){
         <Card>
             <Card.Header>
             <Accordion.Toggle as={Button} variant="link" eventKey="1">
-            การติดตั้ง Fagor SLAB
+            <Translate content='vte.install2' />
             </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="1">
@@ -42,7 +44,7 @@ function VTEservicesInstallation(){
         <Card>
             <Card.Header>
             <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                งาน“ VERSON” เพลส 400 x 8 ยูนิตงานติดตั้ง
+            <Translate content='vte.install3' />
             </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="2">
@@ -52,7 +54,7 @@ function VTEservicesInstallation(){
         <Card>
             <Card.Header>
             <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                เครื่องเพลสไฮดรอลิก - VERSON & LCM- 2500 ตัน
+            <Translate content='vte.install4' />
             </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="3">

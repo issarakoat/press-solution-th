@@ -5,6 +5,7 @@ import SLAB2Data from '../data/Repair_SLAB2Data'
 import ChinFongData from '../data/Repair_ChinFongData'
 import SchulerData from '../data/Repair_SchulerData'
 import AIDA_Data from '../data/Repair_AIDA_Data'
+import Translate from 'react-translate-component'
 function VTErepair(){
     const SLAB2 = SLAB2Data.map(item=>
         <PhotoesGallery id={item.id} img={item.img}/>)
@@ -21,7 +22,7 @@ function VTErepair(){
             <Card>
                 <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    SLAB2 เปลี่ยนเพลาความเร็วสูง (JIER)
+                    <Translate content='vte.repair1'/>
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
@@ -31,7 +32,7 @@ function VTErepair(){
             <Card>
                 <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    ชินฟง       
+                <Translate content='vte.repair2'/>      
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="1">
@@ -41,7 +42,7 @@ function VTErepair(){
             <Card>
                 <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                การซ่อมเบาะสำหรับ“ Schuler” เพลส
+                <Translate content='vte.repair3'/>
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
@@ -51,7 +52,7 @@ function VTErepair(){
             <Card>
                 <Card.Header>
                 <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                    งานซ่อมสำหรับ -AIDA- กด 60 ตัน
+                <Translate content='vte.repair4'/>
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="3">

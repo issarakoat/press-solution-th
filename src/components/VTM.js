@@ -1,16 +1,14 @@
 import React from 'react';
 import {Row,Col,Jumbotron,Container} from 'react-bootstrap'
 import '../styles/vtm.css'
+import Translate from 'react-translate-component'
 const VTM = ()=> (
     <div style={{textAlign:'center'}}className='vte-home'>
         <Jumbotron>
-         <h1>วีที แมชชีนเนอรี่</h1>
+         <h1><Translate content='vtm.title' /></h1>
             <Container>
               <p>
-                    วีที แมชชีนเนอรี่ เป็นตัวแทนจำหน่ายเครื่องเพรสที่ราคา 
-                    สมเหตุสมผลและมีคุณภาพตามมาตรฐานสากล โดยเป็นผู้นำเข้าเครื่องเพรส 
-                    "Xuduan" ดูแลและให้บริการ โดยทีมงานในประเทศไทย 
-                    จึงสะดวกและรวดเร็วทันต่อความต้องการของลูกค้า โดยโรงงานผลิตอยู่ที่ประเทศจีน 
+                <Translate content='vtm.sub' />
                  </p>
                  </Container>
             </Jumbotron>
