@@ -52,7 +52,7 @@ export default {
     },
     vtm:{
         title:'VT Machinery',
-        sub:"VT Machinery is a distributor of press machines that are reasonably priced and meet international quality standards. By being the importer of the press machine 'Xuduan' By a team in Thailand Therefore convenient and fast to meet customer needs The production plant is in China.",
+        sub:"VT Machinery is a distributor of press machines that are reasonably priced and meet international quality standards. By being the importer of the press machine 'Xuduan' By a team in Thailand, Therefore convenient and fast to meet customer needs The production plant is in China.",
 
     },
     xuduan:{
