@@ -25,7 +25,7 @@ class MyVerticallyCenteredModal extends React.Component {
             </p>
 
             <Card.Body>
-            <Card.Link href='http://www.xuduan.com.cn/en/eindex.html' target="_blank" rel="noopener noreferrer"><Translate content="xuduan.visit"/></Card.Link>
+            <Card.Link href='http://www.xuduan.com.cn/' target="_blank" rel="noopener noreferrer"><Translate content="xuduan.visit"/></Card.Link>
             </Card.Body>
       
           </Modal.Body>
