@@ -1,8 +1,7 @@
 import React from 'react';
 import {Row} from 'react-bootstrap'
-// import VTMProductsItem from '../components/VTMProductItem'
+
 import VTMProductsImageItem from '../components/VTMProductsImagesItem'
-// import MyVerticallyCenteredModal from '../components/MyVerticallyCenteredModal'
 import ProductsData from '../data/VTM_products_allData'
 
  function VTM_products(){
@@ -17,7 +16,7 @@ import ProductsData from '../data/VTM_products_allData'
      )
      return (
          <div>
-             <Row>
+             <Row style={{cursor:"pointer"}}>
                 {AllProDucts}
             </Row>
          </div>
@@ -25,4 +24,3 @@ import ProductsData from '../data/VTM_products_allData'
  }
   
  export default VTM_products;
-//   render(<VTM_products />);

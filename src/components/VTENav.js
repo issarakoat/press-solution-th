@@ -4,7 +4,6 @@ import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap';
 import Translate from 'react-translate-component';
 function VTENav() {
   return (
-    <header>
       <Navbar bg="light" variant="light">
         <Link to="/vte">
           <Navbar.Brand href="/vte">
@@ -59,7 +58,6 @@ function VTENav() {
           </Link>
         </Nav>
       </Navbar>
-    </header>
   );
 }
 export default VTENav;
