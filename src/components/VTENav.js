@@ -27,7 +27,6 @@ function VTENav() {
           >
             <Nav.Link
               href="https://press-solutuion-gallery.web.app/"
-              target="_blank"
               rel="noopener noreferrer"
             >
               VTE Gallery
